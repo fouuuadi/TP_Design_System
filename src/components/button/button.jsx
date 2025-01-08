@@ -1,23 +1,22 @@
+import React from "react";
 import PropTypes from "prop-types";
+import "./button.css";
 
-//code fait par FOUAD LAMNAOUAR
-//Un exemple de component Button que je réutilise dans tout mes projet react
-
-const Button = ({ label, action }) => {
-    return (
-        <button className="btn"
-            onClick={() => {
-                action && action();
-            }}
-        >
-            {label}
-        </button>
-    );
+const Button = ({ label, onClick }) => {
+  return (
+    <button className="button" onClick={onClick}>
+      {label}
+    </button>
+  );
 };
 
 Button.propTypes = {
-    label: PropTypes.string.isRequired,
-    action: PropTypes.func,
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+};
+
+Button.defaultProps = {
+  onClick: null,
 };
 
 export default Button;

@@ -16,8 +16,21 @@
     --color-white-1: #ffffffff;
   
     /* Dimensions input */
-    --input-width: 100%; /* Largeur relative au conteneur */
-    --input-height: 3rem; /* Hauteur relative (~48px) */
+    --form-width: 90%; /* Largeur relative au conteneur */
+    --form-height: 3rem; /* Hauteur relative (~48px) */
+
+    /* Button colors */
+    --button-regular-bg: #3754bc; /* Correspond à "Regular" */
+    --button-hover-bg: #4d6cde;   /* Correspond à "Hover" */
+    --button-active-bg: #223c9b;  /* Correspond à "Active" */
+    --button-text-color: #ffffff; /* Couleur du texte */
+  
+    /* Button Dimensions */
+    --button-padding: 1.5rem;      /* Padding des boutons (~24px) */
+    --button-border-radius: 0.5rem; /* Rayon des bordures (~8px) */
+  
+    /* Button Typography */
+    --button-font-size: 1rem; /* Taille de la police (~16px) */
   
     /* Font: Label */
     --font-label-size: 1rem; /* 16px -> rem */
