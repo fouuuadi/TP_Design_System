@@ -1,21 +1,26 @@
 .button {
-    padding: var(--button-padding);
-    width: var(--form-width);
-    margin: var(--margin-xs);
-    font-size: var(--button-font-size);
-    color: var(--button-text-color);
-    background-color: var(--button-regular-bg);
+    font-size: var(--font-size-regular);
+    color: var(--color-white);
+    background-color: var(--color-secondary);
     border: none;
-    border-radius: var(--button-border-radius);
+    border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Animation fluide */
+    transition: background-color var(--transition-duration) var(--transition-ease);
+    width: var(--width-input);
+    height: var(--button-height);
   }
   
   .button:hover {
-    background-color: var(--button-hover-bg); /* Couleur au survol */
+    background-color: var(--color-tertiary);
   }
   
   .button:active {
-    background-color: var(--button-active-bg); /* Couleur lorsque cliqué */
+    background-color: var(--color-primary);
+  }
+  
+  .button:disabled {
+    background-color: var(--color-placeholder);
+    cursor: not-allowed;
+    opacity: 0.7;
   }
   

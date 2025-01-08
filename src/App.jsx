@@ -1,5 +1,12 @@
-function App() {
-  return "C'est good"
-}
+import React from "react";
+import Login from "./components/login/login";
 
-export default App
+const App = () => {
+  return (
+    <div className="app-container">
+      <Login />
+    </div>
+  );
+};
+
+export default App;

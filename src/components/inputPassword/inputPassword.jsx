@@ -4,7 +4,7 @@ import Icon from "../icon/icon";
 import EyeIcon from "../../assets/eye.svg";
 import EyeOffIcon from "../../assets/eye-off.svg";
 import ErrorIcon from "../../assets/error.svg";
-import "./input.css";
+import "./inputPassword.css";
 
 const InputPassword = ({ value, onChange, hasError }) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);
@@ -39,8 +39,8 @@ const InputPassword = ({ value, onChange, hasError }) => {
 };
 
 InputPassword.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
   hasError: PropTypes.bool,
 };
 

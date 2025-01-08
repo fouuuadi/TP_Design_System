@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./input.css";
+import "./common-input.css";
 import Icon from "../icon/icon";
 import ErrorIcon from "../../assets/error.svg";
 
@@ -28,8 +28,8 @@ const Input = ({ value, onChange, hasError }) => {
 };
 
 Input.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
   hasError: PropTypes.bool,
 };
 

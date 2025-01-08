@@ -1,82 +1,36 @@
 :root {
     /* Colors */
-    --color-red-1: #ff0000ff;
-    --color-red-2: #ff2222ff;
-    --color-red-3: #ff3333ff;
-    --color-red-4: #ff3b3bff;
-    --color-red-5: #ff4343ff;
-    --color-blue-1: #0c2479ff;
-    --color-blue-2: #223c9bff;
-    --color-blue-3: #3754bcff;
-    --color-blue-4: #4d6cdeff;
-    --color-blue-5: #6284ffff;
-    --color-noir-1: #000000ff;
-    --color-noir-2: #202020ff;
-    --color-noir-3: #404040ff;
-    --color-white-1: #ffffffff;
-  
-    /* Dimensions input */
-    --form-width: 90%; /* Largeur relative au conteneur */
-    --form-height: 3rem; /* Hauteur relative (~48px) */
+    --color-primary: #2655FB;
+    --color-secondary: #3754BC;
+    --color-tertiary: #4D6CDE;
+    --color-error: red;
+    --color-text: #202020;
+    --color-placeholder: #aaa;
+    --color-background: #ffffff;
+    --color-white: #ffffff;
 
-    /* Button colors */
-    --button-regular-bg: #3754bc; /* Correspond à "Regular" */
-    --button-hover-bg: #4d6cde;   /* Correspond à "Hover" */
-    --button-active-bg: #223c9b;  /* Correspond à "Active" */
-    --button-text-color: #ffffff; /* Couleur du texte */
+    /* Font Sizes */
+    --font-size-small: 0.75rem;
+    --font-size-regular: 0.875rem;
+    --font-size-large: 1rem;
   
-    /* Button Dimensions */
-    --button-padding-vertical: 0.75rem; /* Padding haut/bas (~12px) */
-    --button-padding-horizontal: 1.5rem; /* Padding gauche/droite (~24px) */
-    --button-border-radius: 0.5rem; /* Rayon des bordures (~8px) */
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
   
-    /* Button Typography */
-    --button-font-size: 1rem; /* Taille de la police (~16px) */
+    /* Borders and Radius */
+    --border-radius: 0.25rem;
+    --border-width: 1px;
   
-    /* Font: Label */
-    --font-label-size: 1rem; /* 16px -> rem */
-    --font-label-family: 'Autour One';
-    --font-label-weight: 400;
-    --font-label-line-height: 1.25rem; /* 20px -> rem */
-  
-    /* Font: Title */
-    --font-title-size: 3rem; /* 48px -> rem */
-    --font-title-family: 'Autour One';
-    --font-title-weight: 400;
-    --font-title-line-height: 1.25rem; /* 20px -> rem */
-  
-    /* Font: Body Text */
-    --font-body-text-size: 1.25rem; /* 20px -> rem */
-    --font-body-text-family: 'Single Day';
-    --font-body-text-weight: 400;
-    --font-body-text-line-height: 1.25rem; /* 20px -> rem */
-  
-    /* Font: Subtitle */
-    --font-subtitle-size: 2rem; /* 32px -> rem */
-    --font-subtitle-family: 'Autour One';
-    --font-subtitle-weight: 400;
-    --font-subtitle-line-height: 1.25rem; /* 20px -> rem */
-  
-    /* Font: Body Text 1 */
-    --font-body-text-1-size: 1.5rem; /* 24px -> rem */
-    --font-body-text-1-family: 'Autour One';
-    --font-body-text-1-weight: 400;
-    --font-body-text-1-line-height: 1.25rem; /* 20px -> rem */
-  
-  
-  
-      /* Padding variables */
-      --padding-xs: 0.5rem;   /* Extra Small - ~8px */
-      --padding-sm: 1rem;     /* Small - ~16px */
-      --padding-md: 1.5rem;   /* Medium - ~24px */
-      --padding-lg: 2rem;     /* Large - ~32px */
-      --padding-xl: 3rem;     /* Extra Large - ~48px */
-    
-      /* Margin variables */
-      --margin-xs: 0.5rem;    /* Extra Small - ~8px */
-      --margin-sm: 1rem;      /* Small - ~16px */
-      --margin-md: 1.5rem;    /* Medium - ~24px */
-      --margin-lg: 2rem;      /* Large - ~32px */
-      --margin-xl: 3rem;      /* Extra Large - ~48px */
+    /* Transitions */
+    --transition-duration: 0.2s;
+    --transition-ease: ease-in-out;
+
+    /* Form */
+    --width-input :100%;
+    --button-height: 3rem;
+    --input-height: 3rem;
   }
   
