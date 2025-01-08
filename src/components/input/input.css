@@ -9,15 +9,25 @@
   margin-bottom: 8px;
 }
 
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .input-field {
+  flex: 1;
   padding: 8px;
+  padding-right: 32px; /* Ajoute de l'espace pour l'icône */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
   outline: none;
+  transition: border-color 0.2s ease-in-out;
 }
+
 .input-field:focus {
-  border: solid 2px #2655fb;
+  border-color: #2655FB;
 }
 
 .input-container.error .input-field {
@@ -28,4 +38,12 @@
   color: red;
   font-size: 12px;
   margin-top: 4px;
+}
+
+.icon-container {
+  position: absolute;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

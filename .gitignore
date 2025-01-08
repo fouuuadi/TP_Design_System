@@ -24,6 +24,5 @@ dist-ssr
 *.sw?
 
 *storybook.log
-/src/stories
 /.storybook
 /node_modules
