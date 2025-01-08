@@ -16,12 +16,12 @@ export const Default = Template.bind({});
 Default.args = {
   value: "password123",
   onChange: (e) => console.log("Input changed:", e.target.value),
-  isError: false,
+  hasError: false,
 };
 
 export const WithError = Template.bind({});
 WithError.args = {
   value: "",
   onChange: (e) => console.log("Input changed:", e.target.value),
-  isError: true,
+  hasError: true,
 };

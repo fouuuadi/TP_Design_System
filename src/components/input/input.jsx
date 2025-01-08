@@ -4,9 +4,9 @@ import "./input.css";
 import Icon from "../icon/icon";
 import ErrorIcon from "../../assets/error.svg";
 
-const InputDefault = ({ value, onChange, isError }) => {
+const Input = ({ value, onChange, hasError }) => {
   return (
-    <div className={`input-container ${isError ? "error" : ""}`}>
+    <div className={`input-container`}>
       <label className="input-label">Email</label>
       <div className="input-wrapper">
         <input
@@ -17,9 +17,9 @@ const InputDefault = ({ value, onChange, isError }) => {
           placeholder="Email"
         />
       </div>
-      {isError && (
+      {hasError && (
         <p className="input-error">
-          <Icon src={ErrorIcon} size={12} className="error-icon" />
+          <Icon src={ErrorIcon} size={12} className="error-icon" color="red"/>
           <span>Email incorrect</span>
         </p>
       )}
@@ -27,14 +27,14 @@ const InputDefault = ({ value, onChange, isError }) => {
   );
 };
 
-InputDefault.propTypes = {
+Input.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  isError: PropTypes.bool,
+  hasError: PropTypes.bool,
 };
 
-InputDefault.defaultProps = {
-  isError: false,
+Input.defaultProps = {
+  hasError: false,
 };
 
-export default InputDefault;
+export default Input;

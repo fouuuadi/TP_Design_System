@@ -1,23 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
 import Icon from "./icon";
-import EyeIcon from "../../assets/eye.svg";
-import EyeOffIcon from "../../assets/eye-off.svg";
 import ErrorIcon from "../../assets/error.svg";
 
 export default {
   title: "Components/Icon",
   component: Icon,
-  tags: ["autodocs"],
   argTypes: {
-    color: { control: "color" },
-    size: { control: "number" },
-    onClick: { action: "clicked" },
+    size: { control: "number" }, // Permet de modifier la taille
+    color: {
+      control: { type: "select" },
+      options: ["black", "red", "blue", "green"], // Options de couleur
+    },
+    onClick: { action: "clicked" }, // Capture les clics dans l'onglet Actions
   },
 };
 
-export const Default = (args) => <Icon {...args} />;
+const Template = (args) => <Icon {...args} />;
+
+export const Default = Template.bind({});
 Default.args = {
   src: ErrorIcon,
   size: 32,
-  color: "inherit",
+  color: "black",
+};
+
+export const RedIcon = Template.bind({});
+RedIcon.args = {
+  src: ErrorIcon,
+  size: 32,
+  color: "red",
+};
+
+export const BlueIcon = Template.bind({});
+BlueIcon.args = {
+  src: ErrorIcon,
+  size: 32,
+  color: "blue",
 };

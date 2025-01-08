@@ -6,7 +6,7 @@ import EyeOffIcon from "../../assets/eye-off.svg";
 import ErrorIcon from "../../assets/error.svg";
 import "./input.css";
 
-const InputPassword = ({ value, onChange, isError }) => {
+const InputPassword = ({ value, onChange, hasError }) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -14,7 +14,7 @@ const InputPassword = ({ value, onChange, isError }) => {
   };
 
   return (
-    <div className={`input-container ${isError ? "error" : ""}`}>
+    <div className={`input-container ${hasError ? "error" : ""}`}>
       <label className="input-label">Mot de passe</label>
       <div className="input-wrapper">
         <input
@@ -28,9 +28,9 @@ const InputPassword = ({ value, onChange, isError }) => {
           <Icon src={isPasswordVisible ? EyeOffIcon : EyeIcon} size={20} />
         </div>
       </div>
-      {isError && (
+      {hasError && (
         <p className="input-error">
-          <Icon src={ErrorIcon} size={12} className="error-icon" />
+          <Icon src={ErrorIcon} size={12} className="error-icon" color="red"/>
           <span>Mot de passe incorrect</span>
         </p>
       )}
@@ -41,11 +41,11 @@ const InputPassword = ({ value, onChange, isError }) => {
 InputPassword.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  isError: PropTypes.bool,
+  hasError: PropTypes.bool,
 };
 
 InputPassword.defaultProps = {
-  isError: false,
+  hasError: false,
 };
 
 export default InputPassword;
