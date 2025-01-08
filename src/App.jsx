@@ -1,10 +1,9 @@
 import React from "react";
-import Login from "./components/login/login";
-
+import TpDesignSystem from "./components/router/TP_design_system";
 const App = () => {
   return (
     <div className="app-container">
-      <Login />
+      <TpDesignSystem />
     </div>
   );
 };
