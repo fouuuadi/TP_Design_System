@@ -1,7 +1,7 @@
 :root {
     /* Colors */
     --color-primary: #2655FB;
-    --color-secondary: #3754BC;
+    --color-secondary: hsl(227, 55%, 48%);
     --color-tertiary: #4D6CDE;
     --color-error: red;
     --color-text: #202020;
@@ -29,7 +29,7 @@
     --transition-ease: ease-in-out;
 
     /* Form */
-    --width-input :100%;
+    --input-width: 100%;
     --button-height: 3rem;
     --input-height: 3rem;
   }
