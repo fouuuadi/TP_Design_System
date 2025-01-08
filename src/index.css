@@ -1,0 +1,68 @@
+:root {
+    /* Colors */
+    --color-red-1: #ff0000ff;
+    --color-red-2: #ff2222ff;
+    --color-red-3: #ff3333ff;
+    --color-red-4: #ff3b3bff;
+    --color-red-5: #ff4343ff;
+    --color-blue-1: #0c2479ff;
+    --color-blue-2: #223c9bff;
+    --color-blue-3: #3754bcff;
+    --color-blue-4: #4d6cdeff;
+    --color-blue-5: #6284ffff;
+    --color-noir-1: #000000ff;
+    --color-noir-2: #202020ff;
+    --color-noir-3: #404040ff;
+    --color-white-1: #ffffffff;
+  
+    /* Dimensions input */
+    --input-width: 100%; /* Largeur relative au conteneur */
+    --input-height: 3rem; /* Hauteur relative (~48px) */
+  
+    /* Font: Label */
+    --font-label-size: 1rem; /* 16px -> rem */
+    --font-label-family: 'Autour One';
+    --font-label-weight: 400;
+    --font-label-line-height: 1.25rem; /* 20px -> rem */
+  
+    /* Font: Title */
+    --font-title-size: 3rem; /* 48px -> rem */
+    --font-title-family: 'Autour One';
+    --font-title-weight: 400;
+    --font-title-line-height: 1.25rem; /* 20px -> rem */
+  
+    /* Font: Body Text */
+    --font-body-text-size: 1.25rem; /* 20px -> rem */
+    --font-body-text-family: 'Single Day';
+    --font-body-text-weight: 400;
+    --font-body-text-line-height: 1.25rem; /* 20px -> rem */
+  
+    /* Font: Subtitle */
+    --font-subtitle-size: 2rem; /* 32px -> rem */
+    --font-subtitle-family: 'Autour One';
+    --font-subtitle-weight: 400;
+    --font-subtitle-line-height: 1.25rem; /* 20px -> rem */
+  
+    /* Font: Body Text 1 */
+    --font-body-text-1-size: 1.5rem; /* 24px -> rem */
+    --font-body-text-1-family: 'Autour One';
+    --font-body-text-1-weight: 400;
+    --font-body-text-1-line-height: 1.25rem; /* 20px -> rem */
+  
+  
+  
+      /* Padding variables */
+      --padding-xs: 0.5rem;   /* Extra Small - ~8px */
+      --padding-sm: 1rem;     /* Small - ~16px */
+      --padding-md: 1.5rem;   /* Medium - ~24px */
+      --padding-lg: 2rem;     /* Large - ~32px */
+      --padding-xl: 3rem;     /* Extra Large - ~48px */
+    
+      /* Margin variables */
+      --margin-xs: 0.5rem;    /* Extra Small - ~8px */
+      --margin-sm: 1rem;      /* Small - ~16px */
+      --margin-md: 1.5rem;    /* Medium - ~24px */
+      --margin-lg: 2rem;      /* Large - ~32px */
+      --margin-xl: 3rem;      /* Extra Large - ~48px */
+  }
+  
