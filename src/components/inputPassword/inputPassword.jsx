@@ -3,56 +3,49 @@ import PropTypes from "prop-types";
 import Icon from "../icon/icon";
 import EyeIcon from "../../assets/eye.svg";
 import EyeOffIcon from "../../assets/eye-off.svg";
+import ErrorIcon from "../../assets/error.svg";
 import "./input.css";
 
-const Input = ({ type, value, onChange, isError }) => {
+const InputPassword = ({ value, onChange, isError }) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
     setPasswordVisible((prevState) => !prevState);
   };
 
-  const isPasswordType = type === "password";
-  const inputType = isPasswordType && isPasswordVisible ? "text" : type;
-
   return (
     <div className={`input-container ${isError ? "error" : ""}`}>
-      <label className="input-label">{type === "email" ? "Email" : "Mot de passe"}</label>
+      <label className="input-label">Mot de passe</label>
       <div className="input-wrapper">
         <input
           className="input-field"
-          type={inputType}
+          type={isPasswordVisible ? "text" : "password"}
           value={value}
           onChange={onChange}
-          placeholder={type === "email" ? "Email" : "Mot de passe"}
+          placeholder="Mot de passe"
         />
-        {isPasswordType && (
-          <div className="icon-container" onClick={togglePasswordVisibility}>
-            <Icon
-              src={isPasswordVisible ? EyeOffIcon : EyeIcon}
-              size={20}
-            />
-          </div>
-        )}
+        <div className="icon-container" onClick={togglePasswordVisibility}>
+          <Icon src={isPasswordVisible ? EyeOffIcon : EyeIcon} size={20} />
+        </div>
       </div>
       {isError && (
         <p className="input-error">
-          {type === "email" ? "email incorrect" : "mot de passe incorrect"}
+          <Icon src={ErrorIcon} size={12} className="error-icon" />
+          <span>Mot de passe incorrect</span>
         </p>
       )}
     </div>
   );
 };
 
-Input.propTypes = {
-  type: PropTypes.oneOf(["email", "password"]).isRequired,
+InputPassword.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   isError: PropTypes.bool,
 };
 
-Input.defaultProps = {
+InputPassword.defaultProps = {
   isError: false,
 };
 
-export default Input;
+export default InputPassword;

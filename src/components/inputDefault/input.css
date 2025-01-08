@@ -35,6 +35,9 @@
 }
 
 .input-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: red;
   font-size: 12px;
   margin-top: 4px;
