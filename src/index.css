@@ -26,7 +26,8 @@
     --button-text-color: #ffffff; /* Couleur du texte */
   
     /* Button Dimensions */
-    --button-padding: 1.5rem;      /* Padding des boutons (~24px) */
+    --button-padding-vertical: 0.75rem; /* Padding haut/bas (~12px) */
+    --button-padding-horizontal: 1.5rem; /* Padding gauche/droite (~24px) */
     --button-border-radius: 0.5rem; /* Rayon des bordures (~8px) */
   
     /* Button Typography */
