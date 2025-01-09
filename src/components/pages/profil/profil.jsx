@@ -1,5 +1,9 @@
+import SidebarProfil from "../../sidebar/sidebar_profil";
+import './profil.css'
+
 const Profil = () => {
-  return <h1>Profil hello</h1>;
+  
+  <SidebarProfil/>
 };
 
 export default Profil;
