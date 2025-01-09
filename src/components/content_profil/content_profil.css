@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 100px;
+  }
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+
+.delete-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+
+.content hr {
+width: 80%;
+border: 1px solid black;
+margin: 10px 0;
+}
+
+h1 {
+    top: 20px;
+    position: fixed;
+}
