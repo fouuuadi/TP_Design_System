@@ -1,5 +1,5 @@
-import Formulaire from "./formFprget";
-import formImage from "../../assets/formimageR.webp";
+import Formulaire from "./formForget";
+import formImage from "../../../assets/formimageR.webp";
 import "../login/login.css"
 
 

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Icon from "../icon/icon";
-import EyeIcon from "../../assets/eye.svg";
-import EyeOffIcon from "../../assets/eye-off.svg";
-import ErrorIcon from "../../assets/error.svg";
-import "../inputPassword/inputPassword.css";
+import Icon from "../../icon/icon"
+import EyeIcon from "../../../assets/eye.svg";
+import EyeOffIcon from "../../../assets/eye-off.svg";
+import ErrorIcon from "../../../assets/error.svg";
+import "../../inputPassword/inputPassword.css"
 
 const InputPassword = ({ value, onChange, hasError, label }) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import InputPassword from "./inpuForget";
-import Button from "../button/button";
-import "../form/form.css"
+import Button from "../../button/button"
+import "../../form/form.css"
 
 export default function Formulaire() {
   return (
