@@ -1,3 +1,12 @@
 .linkForgetPass{
     text-align: right;
 }
+
+.form{
+    padding: var(--spacing-lg);
+}
+
+h1{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+}
