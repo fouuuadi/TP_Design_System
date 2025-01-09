@@ -6,7 +6,7 @@ import ErrorIcon from "../../assets/error.svg";
 
 const Input = ({ value, onChange, hasError }) => {
   return (
-    <div className={`input-container`}>
+    <div className={`input-container ${hasError ? "error" : ""}`}>
       <label className="input-label">Email</label>
       <div className="input-wrapper">
         <input
