@@ -19,9 +19,11 @@
   align-items: center;
 }
 
+
 .input-field {
   width: var(--input-width);
   height: var(--input-height);
+  padding-left: var(--spacing-sm);
   border: var(--border-width) solid var(--color-black);
   border-radius: var(--border-radius);
   font-size: var(--font-size-regular);

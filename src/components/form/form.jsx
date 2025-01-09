@@ -8,6 +8,8 @@ import "./form.css";
 export default function Formulaire() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [hasErrorEmail, setHasErrorEmail] = useState(false);
+  const [hasErrorPass, setHasErrorPass] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -15,8 +17,16 @@ export default function Formulaire() {
     if (email === "admin@admin.fr" && password === "admin") {
       navigate("/profil");
     } else {
-      alert("Invalid email or password!");
-      console.log(email, password)
+      if(email !== "admin@admin.fr"){
+        setHasErrorEmail(true);
+      }else{
+        setHasErrorEmail(false);
+      }
+      if(password !== "admin"){
+        setHasErrorPass(true);
+      }else{
+        setHasErrorPass(false);
+      }
     }
   };
 
@@ -30,8 +40,14 @@ export default function Formulaire() {
         type="Email"
         placeholder="john.doe@gmail.com"
         onChange={(e) => setEmail(e.target.value)}
+        hasError={hasErrorEmail}
       ></Input>
-      <InputPassword name="Password" type="password" onChange={(e) => setPassword(e.target.value)}></InputPassword>
+      <InputPassword 
+      name="Password" 
+      type="password" 
+      onChange={(e) => setPassword(e.target.value)} 
+      hasError={hasErrorPass}
+      ></InputPassword>
       <div>
         <Button label="Login"></Button>
       </div>
