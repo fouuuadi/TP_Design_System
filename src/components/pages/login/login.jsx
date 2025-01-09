@@ -1,5 +1,6 @@
-import Formulaire from "../form/form";
-import formImage from "../../assets/formimageR.webp";
+import Formulaire from "../../form/form";
+import formImage from "../../../assets/formimageR.webp";
+
 import "./login.css"
 
 
