@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+.imageDiv{
+  width: 50%;
+}
+
+.imageDiv img{
+  width: 100%;
+}
+
+
+.containerForm{
+  width: 50%;
+}

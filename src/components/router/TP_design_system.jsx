@@ -1,6 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {Route, Routes, BrowserRouter } from "react-router-dom";
 import Profil from "../pages/profil/profil";
 import Login from "../pages/login/login";
+import Forget from "../pages/forgetpassword/forget";
 import NotFound from "../pages/error/404";
 
 const TpDesignSystem = () => {
@@ -9,9 +10,10 @@ const TpDesignSystem = () => {
         <Routes>
             <Route path="TP_Design_System/" element={<Login/>}/>
             <Route path="TP_Design_System/profil" element={<Profil/>}/>
+            <Route path="TP_Design_System/forget" element={<Forget/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
-        </BrowserRouter>
+    </BrowserRouter>
     )
 }
 

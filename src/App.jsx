@@ -1,5 +1,5 @@
 import React from "react";
-import TpDesignSystem from "./components/router/TP_design_system";
+import TpDesignSystem from "./components/router/TP_design_system"
 const App = () => {
   return (
     <div className="app-container">
