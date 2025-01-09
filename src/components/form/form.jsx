@@ -21,7 +21,7 @@ export default function Formulaire() {
             <Button label="Login"></Button>
           </div>
           <div className="linkForgetPass">
-            <Link  className="forgetLink" to="/TP_Design_System/forget">Did you forget your password ?</Link>
+            <Link  className="forgetLink" to="/forget">Did you forget your password ?</Link>
           </div>
         </form>
         </div>
