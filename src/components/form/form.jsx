@@ -6,8 +6,8 @@ import "./form.css"
 
 export default function Formulaire() {
   return (
-    <div>   
-      <div>
+      <div className="form">
+        <div>
         <h1>Login</h1>
         <form action="" method="post">
           <Input
@@ -23,7 +23,7 @@ export default function Formulaire() {
             <a className="forgetLink" href="/forget">Did you forget your password ?</a>
           </div>
         </form>
+        </div>
       </div>
-    </div>
   );
 }
