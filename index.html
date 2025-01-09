@@ -9,5 +9,13 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if (!location.pathname.startsWith('/TP_Design_System/')) {
+        location.replace('/TP_Design_System/');
+      }
+    </script>
+    
+    
+    
   </body>
 </html>

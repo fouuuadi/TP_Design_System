@@ -8,9 +8,9 @@ const TpDesignSystem = () => {
     return (
         <BrowserRouter>
         <Routes>
-            <Route path="TP_Design_System/" element={<Login/>}/>
-            <Route path="TP_Design_System/profil" element={<Profil/>}/>
-            <Route path="TP_Design_System/forget" element={<Forget/>}/>
+            <Route path="/" element={<Login/>}/>
+            <Route path="/profil" element={<Profil/>}/>
+            <Route path="/forget" element={<Forget/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
     </BrowserRouter>
