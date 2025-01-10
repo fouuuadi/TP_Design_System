@@ -33,7 +33,7 @@ const Content = () => {
           votre compte sera supprimé et vous serez redirigé vers la page de connexion.
         </p>
         <div>
-            <Button label="Delete account"></Button>
+            <Button label="Delete account" className='delete-button'></Button>
           </div>      
         </section>
     </div>

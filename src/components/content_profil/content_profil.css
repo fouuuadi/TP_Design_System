@@ -33,3 +33,14 @@
     margin: var(--spacing-sm) 0;
   }
   
+  .delete-button{
+    background-color: var(--color-red);
+  }
+
+  .delete-button:hover{
+    background-color: var(--color-red-tertiary);
+  }
+
+  .delete-button:focus{
+    background-color: var(--color-red-secondary);
+  }
