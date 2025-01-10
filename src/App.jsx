@@ -20,7 +20,7 @@ const App = () => {
         labels.forEach((label) => {
           label.style.color = "var(--color-light)";
         });
-
+        document.getElementsByClassName('forgetLink')[0].style.color = 'var(--color-light)';
       });
     } else {
       body.style.backgroundColor = "var(--color-light)";
@@ -33,6 +33,7 @@ const App = () => {
         labels.forEach((label) => {
           label.style.color = "var(--color-darkmode)";
         });
+        document.getElementsByClassName('forgetLink')[0].style.color = 'var(--color-darkmode)';
       });
     }
   }, [darkMode]);
