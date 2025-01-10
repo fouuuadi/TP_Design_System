@@ -1,5 +1,6 @@
 import formImage from "../../../assets/formimageR.webp";
 import InputPassword from "../../inputPassword/inputPassword";
+import { Link } from "react-router-dom";
 import Button from "../../button/button"
 import "../../form/form.css"
 import "../login/login.css"
@@ -19,7 +20,7 @@ export default function Forget() {
                   <InputPassword name="Password" type="password" label={"Nouveau mot de passe"}></InputPassword>
                   <InputPassword name="Password" type="password" label={"Confirmation mot de passe"}></InputPassword>
                   <div>
-                    <Button label="Submit"></Button>
+                  <Link to='/'><Button label="Submit"></Button></Link>
                   </div>
         
                 </form>

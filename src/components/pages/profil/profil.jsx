@@ -15,7 +15,7 @@ const Profil = () => {
   ]
   return (
     <div className="profil-page">
-      <Header links={links}/>
+      <Header/>
       <SidebarProfil />
       <Content />
     </div>
