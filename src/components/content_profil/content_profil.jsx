@@ -3,6 +3,7 @@ import Input from "../input/input";
 import Button from "../button/button";
 import "./content_profil.css";
 import InputPassword from "../inputPassword/inputPassword";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
@@ -33,7 +34,7 @@ const Content = () => {
           votre compte sera supprimé et vous serez redirigé vers la page de connexion.
         </p>
         <div>
-            <Button label="Delete account" className='delete-button'></Button>
+        <Link to='/'><Button label="Delete account" className='delete-button'></Button></Link>
           </div>      
         </section>
     </div>

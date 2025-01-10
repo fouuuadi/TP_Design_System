@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./sidebar_profil.css";
+import Switch from "../switch/switch";
 
 const SidebarProfil = ({ title, links, defaultDarkMode }) => {
   const [darkMode, setDarkMode] = useState(defaultDarkMode);
@@ -19,7 +20,7 @@ const SidebarProfil = ({ title, links, defaultDarkMode }) => {
   }, [darkMode]);
 
   return (
-    <div className={`sidebar ${darkMode ? "dark-mode" : ""}`}>
+    <aside className={`sidebar ${darkMode ? "dark-mode" : ""}`}>
       <h2>{title}</h2>
       <hr />
       <nav>
@@ -34,17 +35,14 @@ const SidebarProfil = ({ title, links, defaultDarkMode }) => {
         </ul>
       </nav>
       <div className="dark-mode-toggle">
-        <span>Dark Mode</span>
-        <label className="switch">
-          <input
-            type="checkbox"
-            checked={darkMode}
-            onChange={toggleDarkMode}
-          />
-          <span className="slider"></span>
-        </label>
+        <Switch
+        checked={darkMode}
+        onChange={() => setDarkMode(!darkMode)}
+        label="Dark Mode"
+        size="medium"
+      />
       </div>
-    </div>
+    </aside>
   );
 };
 
