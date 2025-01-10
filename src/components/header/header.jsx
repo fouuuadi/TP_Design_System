@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./header.css";
@@ -13,7 +13,7 @@ const Header = ({ links }) => {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="logo">Profil</h1>
+        <h1 className="logo">My Website</h1>
         <button className="hamburger" onClick={toggleMenu}>
           ☰
         </button>
@@ -23,7 +23,11 @@ const Header = ({ links }) => {
           <ul>
             {links.map((link, index) => (
               <li key={index}>
-                <Link to={link.to} className="menu-link" onClick={toggleMenu}>
+                <Link
+                  to={link.to}
+                  className="menu-link"
+                  onClick={() => setMenuOpen(false)} // Ferme le menu après un clic
+                >
                   {link.label}
                 </Link>
               </li>
@@ -39,7 +43,7 @@ Header.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
-      to: PropTypes.string.isRequired, 
+      to: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

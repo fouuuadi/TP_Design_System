@@ -7,7 +7,13 @@ import Header from "../../header/header";
 const Profil = () => {
   return (
     <div className="profil-page">
-      <Header/>
+      <Header
+        links={[
+          { label: "Home", to: "/" },
+          { label: "Profile", to: "/profil" },
+          { label: "Reset Password", to: "/forget" },
+        ]}
+      />
       <SidebarProfil />
       <Content />
     </div>
