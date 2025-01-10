@@ -1,3 +1,5 @@
+@import '../../index.css';
+
 .sidebar {
   width: 300px;
   height: 100vh;
@@ -77,6 +79,6 @@
   color: var(--color-tertiary);
 }
 
-.linkSidebar:visited {
+.linkSidebar, .linkSidebar:visited {
   color: var(--color-white);
 }

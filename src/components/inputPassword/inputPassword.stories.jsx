@@ -23,6 +23,7 @@ Default.args = {
 
 export const WithError = Template.bind({});
 WithError.args = {
+  label: 'Mot de passe',
   value: "",
   onChange: (e) => console.log("Input changed:", e.target.value),
   hasError: true,
