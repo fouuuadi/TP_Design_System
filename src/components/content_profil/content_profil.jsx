@@ -2,6 +2,7 @@ import React from "react";
 import Input from "../input/input";
 import Button from "../button/button";
 import "./content_profil.css";
+import InputPassword from "../inputPassword/inputPassword";
 
 const Content = () => {
   return (
@@ -15,15 +16,12 @@ const Content = () => {
             placeholder="john.doe@gmail.com"
           >
           </Input>
-        <Input
-            name="Email"
-            type="Email"
-            placeholder="john.doe@gmail.com"
+        <InputPassword
+            label={"Mot de passe"}
+            value={"passeword123"}
           >
-          </Input>
-          <div>
+          </InputPassword>
             <Button label="Save"></Button>
-          </div>
       </section>
 
       <hr />
