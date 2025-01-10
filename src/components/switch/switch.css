@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem; /* Espacement entre le label et le switch */
+    gap: 0.5rem;
     background-color: var(--color-red-secondary);
     width: 10%;
     padding: var(--spacing-sm);
