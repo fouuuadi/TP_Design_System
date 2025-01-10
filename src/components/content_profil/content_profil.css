@@ -35,6 +35,11 @@
   
   .delete-button{
     background-color: var(--color-red);
+    width: 100%;
+  }
+
+  .delete-link{
+    width: 65%;
   }
 
   .delete-button:hover{

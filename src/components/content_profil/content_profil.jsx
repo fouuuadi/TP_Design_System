@@ -33,9 +33,7 @@ const Content = () => {
           Pour votre information, après avoir appuyé sur le bouton 'Supprimer',
           votre compte sera supprimé et vous serez redirigé vers la page de connexion.
         </p>
-        <div>
-        <Link to='/'><Button label="Delete account" className='delete-button'></Button></Link>
-          </div>      
+        <Link to='/' className="delete-link"><Button label="Delete account" className='delete-button'></Button></Link>
         </section>
     </main>
   );
