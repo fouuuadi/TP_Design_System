@@ -36,7 +36,7 @@
   cursor: pointer;
   transition: color var(--transition-duration) var(--transition-ease);
 }
-
+/* 
 .dark-mode-toggle {
   margin-top: auto;
   display: flex;
@@ -59,7 +59,7 @@
 .dark-mode .sidebar {
   background-color: var(--color-darkmode);
   color: var(--color-placeholder);
-}
+} */
 
 
 .linkSidebar, .linkSidebar:visited {

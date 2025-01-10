@@ -34,14 +34,6 @@ const SidebarProfil = ({ title, links, defaultDarkMode }) => {
           ))}
         </ul>
       </nav>
-      <div className="dark-mode-toggle">
-        <Switch
-        checked={darkMode}
-        onChange={() => setDarkMode(!darkMode)}
-        label="Dark Mode"
-        size="medium"
-      />
-      </div>
     </aside>
   );
 };

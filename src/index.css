@@ -67,4 +67,10 @@
     box-sizing: border-box;
     font-family: var(--font-family-body)
   }
+
+  /* main {
+    background-color: var(--color-light);
+    color: var(--color-darkmode);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  } */
   
