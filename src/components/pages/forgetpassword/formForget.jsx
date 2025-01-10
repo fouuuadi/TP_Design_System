@@ -1,5 +1,5 @@
 import React from "react";
-import InputPassword from "./inpuForget";
+import InputPassword from "../../inputPassword/inputPassword";
 import Button from "../../button/button"
 import "../../form/form.css"
 
