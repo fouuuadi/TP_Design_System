@@ -34,8 +34,8 @@ const SidebarProfil = ({ title, links, defaultDarkMode }) => {
         </ul>
       </nav>
       <div className="dark-mode-toggle">
-        <label>
-          Dark mode
+        <span>Dark Mode</span>
+        <label className="switch">
           <input
             type="checkbox"
             checked={darkMode}
