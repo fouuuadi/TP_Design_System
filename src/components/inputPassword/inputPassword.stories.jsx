@@ -1,5 +1,7 @@
 import React from "react";
 import InputPassword from "./inputPassword";
+import "./inputPassword.css";
+
 
 export default {
   title: "Components/InputPassword",

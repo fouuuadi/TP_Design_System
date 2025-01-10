@@ -1,5 +1,7 @@
 import React from "react";
 import Input from "./input";
+import "./common-input.css";
+
 
 export default {
   title: "Components/Input",
@@ -10,18 +12,26 @@ export default {
   tags: ["autodocs"],
 };
 
-const Template = (args) => <Input {...args} />;
-
-export const Default = Template.bind({});
+export const Default = (args) => <Input {...args} />;
 Default.args = {
-  value: "example@example.com",
-  onChange: (e) => console.log("input changed:", e.target.value),
+  value: "",
+  onChange: (e) => console.log("Input changed:", e.target.value),
   hasError: false,
+  placeholder: "Enter your text",
 };
 
-export const WithError = Template.bind({});
+export const WithError = (args) => <Input {...args} />;
 WithError.args = {
   value: "",
-  onChange: (e) => console.log("input changed:", e.target.value),
+  onChange: (e) => console.log("Input changed:", e.target.value),
   hasError: true,
+  placeholder: "Enter your email",
+};
+
+export const WithPredefinedValue = (args) => <Input {...args} />;
+WithPredefinedValue.args = {
+  value: "example@example.com",
+  onChange: (e) => console.log("Input changed:", e.target.value),
+  hasError: false,
+  placeholder: "Enter your email",
 };
