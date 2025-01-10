@@ -16,13 +16,13 @@ const SidebarProfil = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Login</Link>
+            <Link to="/" className="linkSidebar">Login</Link>
           </li>
           <li>
-            <Link to="/profil">Profile</Link> 
+            <Link to="/profil" className="linkSidebar">Profile</Link> 
           </li>
           <li>
-            <Link to="/forget">Reset Password</Link>
+            <Link to="/forget" className="linkSidebar">Reset Password</Link>
           </li>
         </ul>
       </nav>

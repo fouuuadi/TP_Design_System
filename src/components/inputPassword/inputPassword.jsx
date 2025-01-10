@@ -6,7 +6,7 @@ import EyeOffIcon from "../../assets/eye-off.svg";
 import ErrorIcon from "../../assets/error.svg";
 import "./inputPassword.css";
 
-const InputPassword = ({ value, onChange, hasError }) => {
+const InputPassword = ({ value, onChange, hasError, label }) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -15,7 +15,7 @@ const InputPassword = ({ value, onChange, hasError }) => {
 
   return (
     <div className={`input-container ${hasError ? "error" : ""}`}>
-      <label className="input-label">Mot de passe</label>
+      <label className="input-label">{label}</label>
       <div className="input-wrapper">
         <input
           className="input-field"

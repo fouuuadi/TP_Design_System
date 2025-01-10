@@ -45,7 +45,8 @@ export default function Formulaire() {
       <InputPassword 
       name="Password" 
       type="password" 
-      onChange={(e) => setPassword(e.target.value)} 
+      onChange={(e) => setPassword(e.target.value)}
+      label="Mot de passe"
       hasError={hasErrorPass}
       ></InputPassword>
       <div>
