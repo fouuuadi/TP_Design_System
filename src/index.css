@@ -8,8 +8,12 @@
     --color-secondary: #3754be;
     --color-tertiary: #4D6CDE;
     --color-error: #ff0000;
+    --color-red: #ff2f2f;
+    --color-red-secondary: #a12727;
+    --color-red-tertiary: #ff5555;
     --color-text: #202020;
     --color-black: #000000;
+    --color-darkmode: #160141;
     --color-placeholder: #aaa;
     --color-background: #ffffff;
     --color-white: #ffffff;

@@ -46,6 +46,7 @@ InputPassword.propTypes = {
 
 InputPassword.defaultProps = {
   hasError: false,
+  label: 'Mot de passe'
 };
 
 export default InputPassword;

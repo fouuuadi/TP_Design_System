@@ -5,36 +5,42 @@
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
-    gap: 100px;
+    gap: var(--spacing-lg);
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: var(--spacing-md);
+    width: 50%;
+  }
+  
+  .delete-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: var(--spacing-md);
+  }
+  
+  .content hr {
+    width: 80%;
+    border: var(--border-width) solid var(--color-black);
+    margin: var(--spacing-sm) 0;
+  }
+  
+  .delete-button{
+    background-color: var(--color-red);
   }
 
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 30px;
-}
+  .delete-button:hover{
+    background-color: var(--color-red-tertiary);
+  }
 
-
-.delete-account {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 30px;
-}
-
-
-.content hr {
-width: 80%;
-border: 1px solid black;
-margin: 10px 0;
-}
-
-h1 {
-    top: 20px;
-    position: fixed;
-}
+  .delete-button:focus{
+    background-color: var(--color-red-secondary);
+  }

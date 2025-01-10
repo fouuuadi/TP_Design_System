@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
 
-const Button = ({ label, onClick }) => {
+const Button = ({ label, onClick, className  }) => {
   return (
-    <button className="button" onClick={onClick}>
+    <button className={`button ${className}`} onClick={onClick}>
       {label}
     </button>
   );
