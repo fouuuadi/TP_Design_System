@@ -14,3 +14,10 @@ npx storybook@latest init
 npm install --save-dev @storybook/react-vite
 npm run storybook
 ```
+
+# Storybook herbergement
+```bash
+npm install --save-dev chromatic
+npx chromatic --project-token=<TOKEN>
+npm run publish-storybook
+```
