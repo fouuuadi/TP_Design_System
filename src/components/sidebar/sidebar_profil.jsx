@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./sidebar_profil.css";
 
@@ -9,6 +9,14 @@ const SidebarProfil = ({ title, links, defaultDarkMode }) => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
 
   return (
     <div className={`sidebar ${darkMode ? "dark-mode" : ""}`}>
@@ -41,24 +49,24 @@ const SidebarProfil = ({ title, links, defaultDarkMode }) => {
 };
 
 SidebarProfil.propTypes = {
-  title: PropTypes.string, // Titre de la sidebar
+  title: PropTypes.string,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       to: PropTypes.string.isRequired,
     })
-  ), // Liens de navigation
-  defaultDarkMode: PropTypes.bool, // Mode sombre par défaut
+  ),
+  defaultDarkMode: PropTypes.bool,
 };
 
 SidebarProfil.defaultProps = {
-  title: "Account", // Titre par défaut
+  title: "Account",
   links: [
     { label: "Login", to: "/" },
     { label: "Profile", to: "/profil" },
     { label: "Reset Password", to: "/forget" },
-  ], // Liens par défaut
-  defaultDarkMode: false, // Mode clair par défaut
+  ],
+  defaultDarkMode: false,
 };
 
 export default SidebarProfil;

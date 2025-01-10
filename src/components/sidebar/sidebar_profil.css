@@ -55,29 +55,27 @@
   display: none;
 }
 
+
 .dark-mode-toggle .slider {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
-  background-color: var(--color-placeholder);
+  background-color: var(--color-darkmode);  
   border-radius: var(--border-radius);
   margin-left: var(--spacing-sm);
   transition: background-color var(--transition-duration) var(--transition-ease);
 }
 
 .dark-mode-toggle input:checked + .slider {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-white);
 }
 
 .dark-mode .sidebar {
-  background-color: var(--color-black);
+  background-color: var(--color-darkmode);
   color: var(--color-placeholder);
 }
 
-.dark-mode .sidebar nav ul li:hover {
-  color: var(--color-tertiary);
-}
 
 .linkSidebar, .linkSidebar:visited {
   color: var(--color-white);
