@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
-    <div className="content">
+    <main className="content">
       <h1>Profile</h1>
       
       <section className="profile-info">
@@ -37,7 +37,7 @@ const Content = () => {
         <Link to='/'><Button label="Delete account" className='delete-button'></Button></Link>
           </div>      
         </section>
-    </div>
+    </main>
   );
 };
 
