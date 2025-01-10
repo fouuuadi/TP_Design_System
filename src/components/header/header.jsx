@@ -5,7 +5,6 @@ import "./header.css";
 
 const Header = ({ links }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
