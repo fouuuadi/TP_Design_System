@@ -10,9 +10,9 @@ export default function Login() {
       <div className="imageDiv">
         <img src={formImage} alt="Form image" />
       </div>
-      <div className="containerForm">
+      <main className="containerForm">
         <Formulaire />
-      </div>
+      </main>
     </div>
   );
 }
