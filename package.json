@@ -12,9 +12,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "chromatic": "npx chromatic --project-token=chpt_0c7403f304be63b"
   },
   "dependencies": {
+    "@react-hook/window-size": "^3.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1"

@@ -39,7 +39,11 @@
 }
 
 .input-field:focus {
-  border-color: var(--color-primary);
+  border:2px solid var(--color-primary);
+}
+
+.input-field:hover {
+  border:2px solid var(--color-secondary);
 }
 
 .input-container.error .input-field {

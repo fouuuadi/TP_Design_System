@@ -37,30 +37,6 @@
   transition: color var(--transition-duration) var(--transition-ease);
 }
 
-.dark-mode-toggle {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: var(--spacing-md);
-}
-
-.dark-mode-toggle label {
-  font-size: var(--font-size-regular);
-  cursor: pointer;
-}
-
-.dark-mode-toggle input {
-  display: none;
-}
-
-
-.dark-mode .sidebar {
-  background-color: var(--color-darkmode);
-  color: var(--color-placeholder);
-}
-
 
 .linkSidebar, .linkSidebar:visited {
   color: var(--color-white);
@@ -109,3 +85,11 @@
 .switch input:checked + .slider::before {
   transform: translateX(20px);
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+

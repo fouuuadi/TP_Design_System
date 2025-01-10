@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import "./icon.css";
 
 const Icon = ({ src, onClick, size = 24, color = "black" }) => {
-  // Génération d'un filtre CSS basé sur la couleur donnée
   const colorFilter = {
     black: "invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%)",
     red: "invert(18%) sepia(82%) saturate(7467%) hue-rotate(0deg) brightness(94%) contrast(105%)",
@@ -20,7 +19,7 @@ const Icon = ({ src, onClick, size = 24, color = "black" }) => {
         width: size,
         height: size,
         cursor: onClick ? "pointer" : "default",
-        filter: colorFilter[color] || "none", // Applique le filtre basé sur la couleur
+        filter: colorFilter[color] || "none",
       }}
     />
   );

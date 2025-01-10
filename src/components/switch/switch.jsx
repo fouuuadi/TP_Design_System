@@ -15,7 +15,7 @@ const Switch = ({ checked, onChange, label, size }) => {
 };
 
 Switch.propTypes = {
-  checked: PropTypes.bool.isRequired,
+  checked: PropTypes.bool.isRequired, 
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string,
   size: PropTypes.oneOf(["small", "medium", "large"]),

@@ -6,12 +6,12 @@ export default {
   title: "Components/Icon",
   component: Icon,
   argTypes: {
-    size: { control: "number" }, // Permet de modifier la taille
+    size: { control: "number" },
     color: {
       control: { type: "select" },
-      options: ["black", "red", "blue", "green"], // Options de couleur
+      options: ["black", "red", "blue", "green"],
     },
-    onClick: { action: "clicked" }, // Capture les clics dans l'onglet Actions
+    onClick: { action: "clicked" },
   },
 };
 

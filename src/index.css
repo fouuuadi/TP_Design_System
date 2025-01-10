@@ -16,8 +16,11 @@
     --color-black: #000000;
     --color-darkmode: #160141;
     --color-placeholder: #aaa;
-    --color-background: #ffffff;
-    --color-white: #ffffff;
+    --color-light: #ffffff;
+    --color-dark: #121212;
+    --color-background:  var(--color-light);
+    --color-text: var(--color-dark);
+    --color-white: var(--color-light);
 
 
       /* Font Families */
@@ -64,4 +67,9 @@
     box-sizing: border-box;
     font-family: var(--font-family-body)
   }
-  
+
+  @media (max-width: 769px) {
+    .switch-container{
+      width: 20%;
+    }
+  }

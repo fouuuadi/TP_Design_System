@@ -1,7 +1,15 @@
 .switch-container {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Espacement entre le label et le switch */
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--color-red-secondary);
+    width: 10%;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
   }
   
   .switch-label {
