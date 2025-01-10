@@ -1,13 +1,24 @@
 .profil-page {
     display: flex;
+
   }
   
-  .content {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 
-    background-color: #f5f5f5;
-    color: #333;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+@media (max-width: 769px) {
+  .profil-page{
+    display: flex;
+    flex-direction: column;
   }
+  .content{
+    height: 100vh;
+  }
+}
   
