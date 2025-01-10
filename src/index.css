@@ -67,3 +67,9 @@
     box-sizing: border-box;
     font-family: var(--font-family-body)
   }
+
+  @media (max-width: 769px) {
+    .switch-container{
+      width: 20%;
+    }
+  }

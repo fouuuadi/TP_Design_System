@@ -15,3 +15,13 @@
 .containerForm{
   width: 50%;
 }
+
+@media (max-width: 769px) {
+  .container{
+      justify-content: center;
+      align-items: center;
+  }
+  .imageDiv{
+      display: none;
+  }
+}
