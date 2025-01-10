@@ -16,6 +16,7 @@
     flex-wrap: nowrap;
     gap: var(--spacing-md);
     width: 50%;
+    
   }
   
   .delete-account {
@@ -24,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    width: 500px;
     gap: var(--spacing-md);
   }
   
